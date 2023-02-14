@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8d11062482.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="mt-20">
+
+            <div class="bg-emerald-500 w-9/12 mx-auto rounded p-10">
+
+                <h1 class="text-6xl text-center text-neutral-900 mb-6">My Text Editor</h1>
+
+                <div class="border-2 border-stone-800 p-4">
+                    <div class="mb-4 px-4 flex justify-between">
+
+                        <div class=" flex gap-5">
+                            <i id="bold" class="fa-solid fa-b hover:bg-lime-500 p-2 rounded"></i>
+                            <i id="italic" class="fa-solid fa-italic  p-2 rounded"></i>
+                            <i id="underline" class="fa-solid fa-underline hover:bg-lime-500 p-2 rounded"></i>
+                        </div>
+                        <div class=" flex gap-5">
+                            <i id="align-left" class="fa-solid fa-align-left hover:bg-lime-500 p-2 rounded"></i>
+                            <i id="align-center" class="fa-solid fa-align-center hover:bg-lime-500 p-2 rounded"></i>
+                            <i id="align-right" class="fa-solid fa-align-right hover:bg-lime-500 p-2 rounded"></i>
+                            <i id="align-justify" class="fa-solid fa-align-justify hover:bg-lime-500 p-2 rounded"></i>
+                        </div>
+                        <div class=" flex gap-5">
+                            <input id="number" type="number" value="17"  class="px-2 w-14 rounded"/>
+                            
+                            <input type="color" value="#000000" id="color">
+                        </div>
+
+                    </div>
+                    <hr class="border border-stone-800">
+                    <textarea style="height:400px; resize:none"  name="" id="textInput" cols="120" rows="15" class="rounded mt-4 p-5 w-full h-full "></textarea>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/bold.js"></script>
+    <script src="js/italic.js"></script>
+    <script src="js/underline.js"></script>
+    <script src="js/align.js"></script>
+    <script src="js/textStyle.js"></script>
+    <script src="js/color.js"></script>
+    <script src="js/fontSize.js"></script>
+</body>
+
+</html>
